@@ -5,17 +5,27 @@ The site includes more detail and has instructions on how to create an HP
 Helion Development Platform Application Lifecycle Services Cluster.
 
 To create an app in PHP, the only mandatory files are the index.php
-and manifest.yml files. The blank composer.json file here is included to get rid 
-of any potential warnings about not having a composer.json file during deployment.
+and manifest.yml files if you are using the Cloud Foundry PHP buildpack.
 
 Manifest.yml is a config file used to specify settings that would otherwise be
-specified by a command-line tool. For PHP, only the name and buildpack fields are
+specified by the Helion CLI. For PHP, only the name and buildpack fields are
 required. The buildpack field is a URL for the buildpack that supports the 
-necessary language and/or framework.
+necessary language and/or framework. A blank composer.json file may be necessary
+for certain PHP buildpacks but is not required for this particular buildpack.
+If you decide to use another PHP buildpack, please refer to the buildpack's 
+documentation as well.
+
+To ensure that your PHP applications continue to perform as expected, it is 
+advisable to use a stable branch or tagged release of a buildpack. For example,
+the manifest.yml could specify a specific tagged release with the following:
+
+`buildpack: https://github.com/cloudfoundry/php-buildpack#v3.0.4`
+
+This app uses the [Cloud Foundry PHP buildpack](https://github.com/cloudfoundry/php-buildpack)
 
 ## Deploy to HP Helion
 You can deploy this app automatically with the button below or with the manual 
-instructions further down. In either case, you will need to have take care of the
+instructions further down. In either case, you will need to have taken care of the
 prerequisites.
 
 <a href="https://deploynow.hpcloud.com/?repoUrl=https://github.com/HelionDevPlatform/helion-hello-world-php">
