@@ -1,5 +1,8 @@
 # Hello World PHP
 
+This version of the app uses a buildpack that is suitable for the HP Helion 
+Development Platform v1.1. Please check the 1.0 branch if you are using v1.0.
+
 New users should check out the resources available at [HP Helion Docs](http://docs.hpcloud.com/helion/devplatform/workbook/helloworld/php/). 
 The site includes more detail and has instructions on how to create an HP
 Helion Development Platform Application Lifecycle Services Cluster.
@@ -22,15 +25,6 @@ the manifest.yml could specify a specific tagged release with the following:
 `buildpack: https://github.com/cloudfoundry/php-buildpack#v3.0.4`
 
 This app uses the [Cloud Foundry PHP buildpack](https://github.com/cloudfoundry/php-buildpack)
-
-## Deploy to HP Helion
-You can deploy this app automatically with the button below or with the manual 
-instructions further down. In either case, you will need to have taken care of the
-prerequisites.
-
-<a href="https://deploynow.hpcloud.com/?repoUrl=https://github.com/HelionDevPlatform/helion-hello-world-php">
-![Helion  Logo](https://a248.e.akamai.net/cdn.hpcloudsvc.com/g0bc199ab57e65f093a48d069effc0c3b/prodae1//button.png?id=6)
-</a>
 
 ## Prerequisites
 - If you do not have an HP Helion Development Platform Application Lifecycle 
