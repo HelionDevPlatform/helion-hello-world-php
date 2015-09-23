@@ -1,4 +1,4 @@
 ---
 applications:
 - name: helion-hello-world-php
-  buildpack: https://github.com/cloudfoundry/php-buildpack#v3.0.4
+  buildpack: https://github.com/cloudfoundry/php-buildpack#v3.2.2

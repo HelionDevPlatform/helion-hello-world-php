@@ -1,7 +1,7 @@
 # Hello World PHP
 
 This version of the app uses a buildpack that is suitable for the HP Helion 
-Development Platform v1.1. Please check the 1.0 branch if you are using v1.0.
+Development Platform v1.3. Please check the 1.0 branch if you are using v1.0.
 
 New users should check out the resources available at [HP Helion Docs](http://docs.hpcloud.com/helion/devplatform/workbook/helloworld/php/). 
 The site includes more detail and has instructions on how to create an HP
@@ -22,7 +22,7 @@ To ensure that your PHP applications continue to perform as expected, it is
 advisable to use a stable branch or tagged release of a buildpack. For example,
 the manifest.yml could specify a specific tagged release with the following:
 
-`buildpack: https://github.com/cloudfoundry/php-buildpack#v3.0.4`
+`buildpack: https://github.com/cloudfoundry/php-buildpack#v3.1.0`
 
 This app uses the [Cloud Foundry PHP buildpack](https://github.com/cloudfoundry/php-buildpack)
 
